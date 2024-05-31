@@ -1,0 +1,281 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{xcolor}
+% A SISU beamer based on THU beamer.
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\renewcommand{\figurename}{Figure.}
+\renewcommand{\tablename}{Table.}
+
+
+\definecolor{appbg}{HTML}{f0f0f0}
+\definecolor{chatbg}{HTML}{ffffff}
+\definecolor{headerbg}{HTML}{4CAF50}
+\definecolor{inputbg}{HTML}{e0e0e0}
+\definecolor{sendbtn}{HTML}{4CAF50}
+\definecolor{navbarbg}{HTML}{333333}
+\definecolor{navbartext}{HTML}{ffffff}
+\definecolor{windowborder}{HTML}{999999}
+
+
+
+\author{Adil ABBADI , Abdelhak MEKAOUI}
+\title{Conception, Développement et Déploiement d'un Chatbot Inte lligent et d'une Plate forme E-Learning}
+\institute{ENSA Agadir}
+\date{\today}
+\usepackage{sisu}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+
+\begin{document}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{mybibfile}
+
+
+\begin{frame}
+
+  \begin{figure}[htpb]
+        \begin{center}
+         \includegraphics[width=0.45\linewidth]{pic/logo.png}
+          \hspace{0.05\linewidth}
+            \includegraphics[width=0.45\linewidth]{pic/code.png}
+        \end{center}
+    \end{figure}
+    
+    \titlepage
+  
+\end{frame}
+
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{Introduction}
+
+\subsection{Contexte general}
+\begin{frame}{Contexte general}
+
+
+
+ 
+    \vspace{0.5cm} % Adjust space between image and text
+    \begin{block}{\centering \textbf{\Large Le centre Code 212}}
+        \centering
+        \vspace{0.2cm} % Adjust space within the block
+        Le Code 212, lancé dans le cadre du PACTE ESRI-2030 au Maroc, est un centre de formation et de certification dédié aux métiers du digital, visant à renforcer les compétences numériques et à promouvoir l’innovation pour répondre aux besoins du marché.
+    \end{block}
+
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.45\linewidth]{pic/code.png}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Problematique}
+\begin{frame}{Problematique}
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=3cm]{pic/question.png}
+    \end{figure}
+   Avec la digitalisation croissante, Code 212 adapte les outils éducatifs pour offrir une interaction personnalisée et immédiate via un chatbot IA, répondant ainsi aux besoins actuels des étudiants.
+\end{frame}
+
+\subsection{Solution proposee}
+\begin{frame}{Solution proposee}
+
+Le chatbot IA de Code 212 offre une assistance instantanée aux étudiants en temps réel, optimisant ainsi les ressources pédagogiques du centre.
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=3cm]{pic/ia.png}
+    \end{figure}
+\end{frame}
+
+
+
+\subsection{Fonctionnalités attendues}
+\begin{frame}{Fonctionnalités attendues}
+
+\begin{itemize}
+    \setlength\itemsep{0.8em} % Adjust the spacing between items
+     \item \textbf{Interaction avec chatbot:} repondre aux questions des etudiants en tempas reel.
+    \item \textbf{Inscription à un cours:} Inscription rapide en ligne
+    \item \textbf{Inscription à un événement:} Participation facile aux événements
+    \item \textbf{Demande de certificat:} Obtention de certificats via chatbot
+    \item \textbf{Gestion des cours:} Administration des cours par gestionnaire
+    \item \textbf{Gestion des événements:} Organisation des événements
+    \item \textbf{Gestion des certificats:} Administration des certificats
+    \item \textbf{Gestion des utilisateurs:} Administration des utilisateurs
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\section{Conception du Project}
+\subsection{Description du Project}
+\begin{frame}{Description du Project}
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
+    \end{figure}
+
+\end{frame}
+
+\subsection{Digramme cas d'utilisation}
+\begin{frame}{Digramme cas d'utilisation}
+ \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=7.5cm]{pic/usecase.png}
+    \end{figure}
+\end{frame}
+
+\subsection{Planification}
+\begin{frame}{Planification}
+ 
+ \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=7.5cm]{pic/gantt.png}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Prototype}
+\begin{frame}{Prototype}
+
+ \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=6cm]{pic/prototype.png}
+    \end{figure}
+    
+\end{frame}
+
+
+\section{Spécifications Techniques}
+
+
+
+\subsection{Architecture microsevice}
+
+
+
+\begin{frame}{Architecture microservice}
+   \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Benchmark}
+\begin{frame}{Benchmark}
+   \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=5cm]{pic/benchmark.png}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Technologies Sélectionnées}
+\begin{frame}{Technologies Sélectionnées}
+    \begin{figure}[htpb]
+        \centering
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=3cm]{pic/next.png}
+        \end{minipage}%
+        \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=3cm]{pic/spring.png}
+        \end{minipage}%
+        \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=4cm]{pic/keycloak.png}
+        \end{minipage}
+         \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=4cm]{pic/ia.png}
+        \end{minipage}
+    \end{figure}
+\end{frame}
+
+\subsection{Communication entre services}
+\begin{frame}{Communication entre services}
+   \begin{figure}[htpb]
+        \centering
+        \includegraphics[height=2cm]{pic/rest.png}
+         \hspace{0.1\textwidth}
+         \includegraphics[height=2cm]{pic/kafka.png}
+    \end{figure}
+\end{frame}
+
+\subsection{Conclusion}
+\begin{frame}{Conclusion}
+ 
+\end{frame}
+
+\section{Project Management}
+
+\subsection{Methodology}
+\begin{frame}{Methodology}
+    Afin de gérer au mieux ce projet, nous avons opté pour la méthode SCRUM et divisé les différents modules en sprints.
+\end{frame}
+
+\subsection{Sprints}
+\begin{frame}{Sprints}
+    Un sprint de préparation a été initié pour effectuer une analyse fonctionnelle globale et construire un modèle de base pour les sprints suivants.
+\end{frame}
+
+\subsection{Execution}
+\begin{frame}{Execution}
+    Après avoir terminé le sprint de préparation, nous avons exécuté les autres sprints, chacun étant dédié à la conception détaillée d’un module de l’application, suivi par l’élaboration de ses maquettes et enfin sa réalisation.
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+    En résumé, le projet vise à intégrer un chatbot AI dans une plateforme e-learning, offrant une expérience d’apprentissage améliorée pour les étudiants et une gestion efficace des cours et événements pour les gestionnaires et administrateurs.
+\end{frame}
+
+\section{References}
+
+\begin{frame}[allowframebreaks]
+    \bibliography{ref}
+    \bibliographystyle{alpha}
+\end{frame}
+
+
+\end{document}
