@@ -1,9 +1,8 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass{beamer}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usepackage{xcolor}
-\usepackage[french]{babel}
 % A SISU beamer based on THU beamer.
 
 % other packages
@@ -11,6 +10,7 @@
 \usepackage{graphicx,pstricks,listings,stackengine}
 \renewcommand{\figurename}{Figure.}
 \renewcommand{\tablename}{Table.}
+
 
 \definecolor{appbg}{HTML}{f0f0f0}
 \definecolor{chatbg}{HTML}{ffffff}
@@ -21,8 +21,10 @@
 \definecolor{navbartext}{HTML}{ffffff}
 \definecolor{windowborder}{HTML}{999999}
 
+
+
 \author{Adil ABBADI , Abdelhak MEKAOUI}
-\title{Conception, Développement et Déploiement d'un Chatbot Intelligent et d'une Plateforme E-Learning}
+\title{Conception, Développement et Déploiement d'un Chatbot Inte lligent et d'une Plate forme E-Learning}
 \institute{ENSA Agadir}
 \date{\today}
 \usepackage{sisu}
@@ -55,52 +57,13 @@
 
   \begin{figure}[htpb]
         \begin{center}
-         \includegraphics[width=0.3\linewidth]{pic/logo.png}
-         \hfill
-            \includegraphics[width=0.3\linewidth]{pic/code.png}
+         \includegraphics[width=0.45\linewidth]{pic/logo.png}
+          \hspace{0.05\linewidth}
+            \includegraphics[width=0.45\linewidth]{pic/code.png}
         \end{center}
     \end{figure}
     
     \titlepage
-
-
-
-    \begin{tikzpicture}[remember picture, overlay]
-        % Define the coordinates where you want the block to be placed
-        \coordinate (block) at ([yshift=-8.3cm]current page.north);
-    
-        % Place the block at the defined coordinates
-        \node[above, text width=\linewidth, text=black,fill = white] at (block) {
-            \begin{minipage}{\linewidth}
-                \centering
-                \begin{minipage}[t]{0.45\linewidth}
-                    \begin{center}
-                        \small
-                        \textbf{Jury:} \\
-                        M. A EL YOUSFI \\
-                        M. H AKSASSE \\
-                        M. M ELYAAKOUBI \\
-                        
-
-
-                        % Ajoutez d'autres membres du jury si nécessaire
-                    \end{center}
-                \end{minipage}
-                \hfill
-                \begin{minipage}[t]{0.45\linewidth}
-                    \begin{center}
-                        \small
-                        \textbf{Encadré par:} \\
-                        M. A EL YOUSFI\\
-                        M. H Elkina\\
-                        
-
-                        % Ajoutez d'autres encadrants si nécessaire
-                    \end{center}
-                \end{minipage}
-            \end{minipage}
-        };
-    \end{tikzpicture}
   
 \end{frame}
 
@@ -186,11 +149,8 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Fonctionnalités attendues}
 
 
-\begin{frame}{Fonctionnalités Axées sur l'Utilisateur}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=3cm]{pic/user.png}
-    \end{figure}
+\begin{frame}{Fonctionnalités attendues (1)}
+
 \begin{itemize}
     \setlength\itemsep{0.8em} % Adjust the spacing between items
      \item \textbf{Interaction avec chatbot}
@@ -203,11 +163,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \end{frame}
 
 
-\begin{frame}{Fonctionnalités Axées sur l'administrateur}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=3cm]{pic/admin.png}
-    \end{figure}
+\begin{frame}{Fonctionnalités attendues (2)}
 
     \begin{itemize}
         \setlength\itemsep{0.8em} % Adjust the spacing between items
@@ -224,12 +180,12 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 
 
-\section{Analyse et Conception du Project}
-\subsection{Analyse du besoin}
-\begin{frame}{Analyse du besoin}
+\section{Conception du Project}
+\subsection{Description du Project}
+\begin{frame}{Description du Project}
 \begin{figure}[htpb]
         \centering
-        \includegraphics[height=5cm]{pic/analyse-besoin.jpg}
+        \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
     \end{figure}
 
 \end{frame}
@@ -287,43 +243,22 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \begin{frame}{Architecture microservice}
    \begin{figure}[htpb]
         \centering
-        \includegraphics[height=6cm]{pic/microservice_architecture_presentation.png}
+        \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
     \end{figure}
 \end{frame}
 
 
-\begin{frame}{Architectures prévues}
-    \begin{figure}[htpb]
-         \centering
-         \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
-     \end{figure}
- \end{frame}
-
-
 \subsection{Benchmark}
-\begin{frame}{Benchmark Backend}
+\begin{frame}{Benchmark}
    \begin{figure}[htpb]
         \centering
         \includegraphics[height=5cm]{pic/benchmark.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Benchmark Fronted}
-    \begin{figure}[htpb]
-         \centering
-         \includegraphics[height=5cm]{pic/bench-next.jpg}
-     \end{figure}
- \end{frame}
-
- \begin{frame}{Benchmark model IA}
-    \begin{figure}[htpb]
-         \centering
-         \includegraphics[height=6cm]{pic/ia_benchmark.png}
-     \end{figure}
- \end{frame}
 
 \subsection{Technologies Sélectionnées}
-\begin{frame}{Technologies choisies pour les services}
+\begin{frame}{Technologies Sélectionnées}
     \begin{figure}[htpb]
         \centering
         \begin{minipage}{0.32\textwidth}
@@ -338,31 +273,12 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
         \hspace{0.03\textwidth}
         \begin{minipage}{0.32\textwidth}
             \centering
-            \includegraphics[height=3cm]{pic/keycloak.png}
+            \includegraphics[height=4cm]{pic/keycloak.png}
         \end{minipage}
-        
-    \end{figure}
-\end{frame}
-
-
-
-\begin{frame}{Technologies choisies pour IA}
-    \begin{figure}[htpb]
-        \centering
-       
-        \begin{minipage}{0.5\textwidth}
+         \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
             \centering
-            \includegraphics[height=2cm]{pic/tinyllama.png}
-        \end{minipage}
-        \hspace{0.1\textwidth}
-        \begin{minipage}{0.5\textwidth}
-            \centering
-            \includegraphics[height=2cm]{pic/langchain.jpeg}
-        \end{minipage}
-        \hspace{0.1\textwidth}
-        \begin{minipage}{0.5\textwidth}
-            \centering
-            \includegraphics[height=2cm]{pic/mongo.png}
+            \includegraphics[height=4cm]{pic/ia.png}
         \end{minipage}
     \end{figure}
 \end{frame}
@@ -383,137 +299,79 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
     Cette étude technique détaille l'architecture des microservices, les technologies utilisées, et les interactions entre les services, garantissant une application modulaire, sécurisée, et scalable avec Keycloak pour la gestion des identités et des accès. Les choix de conception visent à assurer une expérience utilisateur optimale tout en garantissant performance et sécurité.
 \end{frame}
 
-
 \section{Realisation et mise en oeuvre}
+
+
+\subsection{Sprints}
+\begin{frame}{Sprints reels (1)}
+ 
+    \begin{figure}[htpb]
+           \centering
+           \includegraphics[height=3.5cm]{pic/gantt-reel.png}
+       \end{figure}
+   \end{frame}
+
+   \begin{frame}{Sprints reels (2)}
+ 
+    \begin{itemize}
+        \item Sprint 1:
+        \begin{itemize}
+            \item Planification et configuration initiale du chatbot (User Story 1.1)
+            \item Base de connaissances du chatbot (User Story 1.2)
+        \end{itemize}
+        
+        \item Sprint 2:
+        \begin{itemize}
+            \item Mise à jour de la base de données par l’administrateur (User Story 1.3)
+            \item Consultation des cours disponibles (User Story 2.1)
+        \end{itemize}
+        
+        \item Sprint 3:
+        \begin{itemize}
+            \item Inscription aux cours et événements (User Story 2.2)
+            \item Inscription aux examens de certification gratuits (User Story 2.3)
+        \end{itemize}
+        
+        \item Sprint 4:
+        \begin{itemize}
+            \item Amélioration de l’interface utilisateur (User Story 3.1)
+            \item Optimisation des performances du chatbot, déploiement et création des conteneurs (User Story 3.2)
+        \end{itemize}
+    \end{itemize}
+    
+   \end{frame}
+
+
+
 \subsection{Sprint 1: D´eveloppement et D´eploiement du Chatbot}
 \begin{frame}{Diagramme de cas d'utilisation}
 
-    \begin{figure}[htpb]
+\begin{figure}[htpb]
         \centering
         \includegraphics[height=5cm]{pic/sprint1-usecase.png}
-    \end{figure}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Diagramme de classe}
 
-    \begin{figure}[htpb]
+\begin{figure}[htpb]
         \centering
         \includegraphics[height=5cm]{pic/sprint1-class.png}
-    \end{figure}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Diagramme de sequence}
-    \begin{figure}[htpb]
+\begin{figure}[htpb]
         \centering
         \includegraphics[height=8cm]{pic/chatbot-seq.png}
-    \end{figure}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Realisation}
-    \begin{figure}[htpb]
+\begin{figure}[htpb]
         \centering
         \includegraphics[height=6cm]{pic/chat2.png}
-    \end{figure}
-\end{frame}
-
-
-\subsection{Sprint 2: Authentification et mise a jour de la
-    base de donnees par l’administrateur}
-\begin{frame}{Diagramme de cas d'utilisation}
-
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=5cm]{pic/sprint2-usecase.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Diagramme de classe}
-
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=5cm]{pic/sprint2-class.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Diagramme de sequence d'authentification}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=8cm]{pic/keycloak-seq.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Diagramme de sequence de gestion des resources du chatbot}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=8cm]{pic/chat-res-seq.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Realisation}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=6cm]{pic/admin-doc.png}
-    \end{figure}
-\end{frame}
-
-
-
-\subsection{Sprint 3: Inscription aux cours, Eevenements et
-    certificats}
-\begin{frame}{Diagramme de cas d'utilisation}
-
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=5cm]{pic/sprint3-usecase.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Diagramme de classe}
-
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=5cm]{pic/sprint2-class.png}
-    \end{figure}
-\end{frame}
-
-
-\begin{frame}{Diagramme de sequence}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=8cm]{pic/seq-certifs.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Realisation}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=6cm]{pic/certifs-list.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Realisation}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=6cm]{pic/calendar.png}
-    \end{figure}
-\end{frame}
-
-
-\subsection{Sprint 4: Am´elioration de l’Interface Utilisateur et d eploiment et creation des
-    contenaires}
-
-\begin{frame}{Chat room en light mode}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=6cm]{pic/light-chat.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Profile en light mode}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[height=6cm]{pic/light-profile.png}
-    \end{figure}
+\end{figure}
 \end{frame}
 
 \subsection{Execution}
@@ -522,7 +380,49 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \end{frame}
 
 
+\subsection{Sprint 2: Authentification et mise a jour de la
+base de donnees par l’administrateur}
+\begin{frame}{Diagramme de cas d'utilisation}
 
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=5cm]{pic/sprint2-usecase.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Diagramme de classe}
+
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=5cm]{pic/sprint2-class.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Diagramme de sequence d'authentification}
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=8cm]{pic/keycloak-seq.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Diagramme de sequence de gestion des resources du chatbot}
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=8cm]{pic/chat-res-seq.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Realisation}
+\begin{figure}[htpb]
+        \centering
+        \includegraphics[height=6cm]{pic/admin-doc.png}
+\end{figure}
+\end{frame}
+
+\subsection{Execution}
+\begin{frame}{Execution}
+    Demonstration de l'application
+\end{frame}
 
 \section{Conclusion}
 
