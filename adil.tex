@@ -1,8 +1,9 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage[french]{babel}
 % A SISU beamer based on THU beamer.
 
 % other packages
@@ -10,7 +11,6 @@
 \usepackage{graphicx,pstricks,listings,stackengine}
 \renewcommand{\figurename}{Figure.}
 \renewcommand{\tablename}{Table.}
-
 
 \definecolor{appbg}{HTML}{f0f0f0}
 \definecolor{chatbg}{HTML}{ffffff}
@@ -21,10 +21,8 @@
 \definecolor{navbartext}{HTML}{ffffff}
 \definecolor{windowborder}{HTML}{999999}
 
-
-
 \author{Adil ABBADI , Abdelhak MEKAOUI}
-\title{Conception, Développement et Déploiement d'un Chatbot Inte lligent et d'une Plate forme E-Learning}
+\title{Conception, Développement et Déploiement d'un Chatbot Intelligent et d'une Plateforme E-Learning}
 \institute{ENSA Agadir}
 \date{\today}
 \usepackage{sisu}
@@ -57,13 +55,52 @@
 
   \begin{figure}[htpb]
         \begin{center}
-         \includegraphics[width=0.45\linewidth]{pic/logo.png}
-          \hspace{0.05\linewidth}
-            \includegraphics[width=0.45\linewidth]{pic/code.png}
+         \includegraphics[width=0.3\linewidth]{pic/logo.png}
+         \hfill
+            \includegraphics[width=0.3\linewidth]{pic/code.png}
         \end{center}
     \end{figure}
     
     \titlepage
+
+
+
+    \begin{tikzpicture}[remember picture, overlay]
+        % Define the coordinates where you want the block to be placed
+        \coordinate (block) at ([yshift=-8.3cm]current page.north);
+    
+        % Place the block at the defined coordinates
+        \node[above, text width=\linewidth, text=black,fill = white] at (block) {
+            \begin{minipage}{\linewidth}
+                \centering
+                \begin{minipage}[t]{0.45\linewidth}
+                    \begin{center}
+                        \small
+                        \textbf{Jury:} \\
+                        M. A EL YOUSFI \\
+                        M. H AKSASSE \\
+                        M. M ELYAAKOUBI \\
+                        
+
+
+                        % Ajoutez d'autres membres du jury si nécessaire
+                    \end{center}
+                \end{minipage}
+                \hfill
+                \begin{minipage}[t]{0.45\linewidth}
+                    \begin{center}
+                        \small
+                        \textbf{Encadré par:} \\
+                        M. A EL YOUSFI\\
+                        M. H Elkina\\
+                        
+
+                        % Ajoutez d'autres encadrants si nécessaire
+                    \end{center}
+                \end{minipage}
+            \end{minipage}
+        };
+    \end{tikzpicture}
   
 \end{frame}
 
@@ -187,12 +224,12 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 
 
-\section{Conception du Project}
-\subsection{Description du Project}
-\begin{frame}{Description du Project}
+\section{Analyse et Conception du Project}
+\subsection{Analyse du besoin}
+\begin{frame}{Analyse du besoin}
 \begin{figure}[htpb]
         \centering
-        \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
+        \includegraphics[height=5cm]{pic/analyse-besoin.jpg}
     \end{figure}
 
 \end{frame}
@@ -313,19 +350,19 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
     \begin{figure}[htpb]
         \centering
        
-        \begin{minipage}{0.32\textwidth}
+        \begin{minipage}{0.5\textwidth}
             \centering
-            \includegraphics[height=3cm]{pic/langchain.jpeg}
+            \includegraphics[height=2cm]{pic/tinyllama.png}
         \end{minipage}
         \hspace{0.1\textwidth}
-        \begin{minipage}{0.32\textwidth}
+        \begin{minipage}{0.5\textwidth}
             \centering
-            \includegraphics[height=3cm]{pic/tinyllama.png}
+            \includegraphics[height=2cm]{pic/langchain.jpeg}
         \end{minipage}
         \hspace{0.1\textwidth}
-        \begin{minipage}{0.32\textwidth}
+        \begin{minipage}{0.5\textwidth}
             \centering
-            \includegraphics[height=3cm]{pic/mongo.png}
+            \includegraphics[height=2cm]{pic/mongo.png}
         \end{minipage}
     \end{figure}
 \end{frame}
