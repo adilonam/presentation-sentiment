@@ -55,7 +55,7 @@
 
 \begin{frame}
 
-  \begin{figure}[htpb]
+  \begin{figure}[H]
         \begin{center}
          \includegraphics[width=0.45\linewidth]{pic/logo.png}
           \hspace{0.05\linewidth}
@@ -86,7 +86,7 @@
         Le Code 212, lancé dans le cadre du PACTE ESRI-2030 au Maroc, est un centre de formation et de certification dédié aux métiers du digital, visant à renforcer les compétences numériques et à promouvoir l’innovation pour répondre aux besoins du marché.
     \end{block}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
     \centering
       \begin{minipage}[b]{0.45\linewidth}
         \centering
@@ -102,7 +102,7 @@
 
 \begin{frame}{Centre Code212 : Ses Fonctionnalités et Services}
  
-   \begin{figure}[htpb]
+   \begin{figure}[H]
     \centering
       \begin{minipage}[b]{0.45\linewidth}
         \centering
@@ -119,7 +119,7 @@
 
 \subsection{Problematique}
 \begin{frame}{Problematique}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=3cm]{pic/question.png}
     \end{figure}
@@ -130,7 +130,7 @@
 \begin{frame}{Solution proposee}
 
 Le chatbot IA de Code 212 offre une assistance instantanée aux étudiants en temps réel, optimisant ainsi les ressources pédagogiques du centre.
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=3cm]{pic/ia.png}
     \end{figure}
@@ -140,7 +140,7 @@ Le chatbot IA de Code 212 offre une assistance instantanée aux étudiants en te
 
 S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similaire pourrait efficacement répondre aux besoins de recherche des utilisateurs, en fournissant des informations pertinentes en temps réel pour faciliter l'accès et le traitement des connaissances.
 
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=3cm]{pic/chatgpt.png}
     \end{figure}
@@ -183,7 +183,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \section{Conception du Project}
 \subsection{Description du Project}
 \begin{frame}{Description du Project}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
     \end{figure}
@@ -192,7 +192,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 \subsection{Digramme cas d'utilisation}
 \begin{frame}{Digramme cas d'utilisation}
- \begin{figure}[htpb]
+ \begin{figure}[H]
         \centering
         \includegraphics[height=7.5cm]{pic/usecase.png}
     \end{figure}
@@ -202,7 +202,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Methodology}
 \begin{frame}{Methodology}
     
-    \begin{figure}[htpb]
+    \begin{figure}[H]
         \centering
         \includegraphics[height=4cm]{pic/scrum.png}
     \end{figure}
@@ -214,7 +214,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Planification}
 \begin{frame}{Planification}
  
- \begin{figure}[htpb]
+ \begin{figure}[H]
         \centering
         \includegraphics[height=3.5cm]{pic/gant-prev.png}
     \end{figure}
@@ -224,7 +224,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Prototype}
 \begin{frame}{Prototype}
 
- \begin{figure}[htpb]
+ \begin{figure}[H]
         \centering
         \includegraphics[height=6cm]{pic/prototype.png}
     \end{figure}
@@ -241,7 +241,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 
 \begin{frame}{Architecture microservice}
-   \begin{figure}[htpb]
+   \begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/Code212_architecture.drawio (1).png}
     \end{figure}
@@ -250,7 +250,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 \subsection{Benchmark}
 \begin{frame}{Benchmark}
-   \begin{figure}[htpb]
+   \begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/benchmark.png}
     \end{figure}
@@ -259,7 +259,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 \subsection{Technologies Sélectionnées}
 \begin{frame}{Technologies Sélectionnées}
-    \begin{figure}[htpb]
+    \begin{figure}[H]
         \centering
         \begin{minipage}{0.32\textwidth}
             \centering
@@ -285,7 +285,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 \subsection{Communication entre services}
 \begin{frame}{Communication entre services}
-   \begin{figure}[htpb]
+   \begin{figure}[H]
         \centering
         \includegraphics[height=2cm]{pic/rest.png}
          \hspace{0.1\textwidth}
@@ -305,7 +305,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Sprints}
 \begin{frame}{Sprints reels (1)}
  
-    \begin{figure}[htpb]
+    \begin{figure}[H]
            \centering
            \includegraphics[height=3.5cm]{pic/gantt-reel.png}
        \end{figure}
@@ -346,7 +346,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 \subsection{Sprint 1: D´eveloppement et D´eploiement du Chatbot}
 \begin{frame}{Diagramme de cas d'utilisation}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/sprint1-usecase.png}
 \end{figure}
@@ -354,21 +354,21 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 
 \begin{frame}{Diagramme de classe}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/sprint1-class.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Diagramme de sequence}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=8cm]{pic/chatbot-seq.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Realisation}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=6cm]{pic/chat2.png}
 \end{figure}
@@ -384,7 +384,7 @@ S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similair
 base de donnees par l’administrateur}
 \begin{frame}{Diagramme de cas d'utilisation}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/sprint2-usecase.png}
 \end{figure}
@@ -392,28 +392,28 @@ base de donnees par l’administrateur}
 
 \begin{frame}{Diagramme de classe}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/sprint2-class.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Diagramme de sequence d'authentification}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=8cm]{pic/keycloak-seq.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Diagramme de sequence de gestion des resources du chatbot}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=8cm]{pic/chat-res-seq.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Realisation}
-\begin{figure}[htpb]
+\begin{figure}[H]
         \centering
         \includegraphics[height=6cm]{pic/admin-doc.png}
 \end{figure}
@@ -427,7 +427,7 @@ base de donnees par l’administrateur}
 \section{Conclusion}
 
 \begin{frame}{Conclusion}
-    \begin{figure}[htpb]
+    \begin{figure}[H]
         \centering
         \includegraphics[height=5cm]{pic/chat1.png}
     \end{figure}
