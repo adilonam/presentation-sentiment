@@ -2,7 +2,6 @@
 
 \subsection{Contexte general}
 
-
 \begin{frame}{Organisme d'accueil}
 
     \vspace{0.5cm} % Adjust space between image and text
@@ -52,12 +51,12 @@
     
     \vspace{0.5cm}
     
-    \begin{block}{\centering \textbf{Défis Organisationnels}}
+    \begin{block}{\centering \textbf{Défis de l'Analyse de Sentiments}}
         \begin{itemize}
             \setlength\itemsep{0.6em}
-            \item \textbf{Média numérique} : Dispersion des canaux d'information
-            \item \textbf{Surcharge informationnelle} : Volume excessif de données à traiter
-            \item \textbf{Process rapide} : Besoin d'accélération des workflows
+            \item \textbf{Volume de données} : Milliers de commentaires quotidiens sur Hespress
+            \item \textbf{Analyse manuelle} : Processus chronophage et subjectif
+            \item \textbf{Temps réel} : Besoin d'analyse instantanée des sentiments
         \end{itemize}
     \end{block}
     
@@ -65,7 +64,7 @@
     
     \begin{alertblock}{\centering \textbf{Problématique}}
         \centering
-        Comment automatiser l'accès à l'information et optimiser les processus métier face à la prolifération des données numériques ?
+        Comment analyser efficacement les sentiments exprimés dans les commentaires des actualités Hespress pour comprendre l'opinion publique marocaine en temps réel ?
     \end{alertblock}
 \end{frame}
 
@@ -78,18 +77,22 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Un Chatbot Inspiré par ChatGPT}
-
-    S'inspirant de ChatGPT, un outil de réponse automatisée, une solution similaire pourrait efficacement répondre aux besoins de recherche des utilisateurs, en fournissant des informations pertinentes en temps réel pour faciliter l'accès et le traitement des connaissances.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[height=3cm]{assets/images/chatgpt.png}
-    \end{figure}
+\begin{frame}{Architecture Technique}
+    \begin{block}{\centering \textbf{Stack Technologique}}
+        \begin{itemize}
+            \setlength\itemsep{0.6em}
+            \item \textbf{Frontend} : Next.js pour une interface moderne
+            \item \textbf{Backend} : FastAPI pour des API performantes
+            \item \textbf{Base de données} : PostgreSQL avec cache Redis
+            \item \textbf{Authentification} : Keycloak pour la sécurité
+            \item \textbf{Scraping} : Selenium pour l'extraction de données
+            \item \textbf{IA} : Modèle cardiffnlp/twitter-xlm-roberta-base-sentiment
+            \item \textbf{API Gateway} : Spring pour l'orchestration
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 \subsection{Fonctionnalités attendues}
-
 
 \begin{frame}{Fonctionnalités Axées sur l'Utilisateur}
     \begin{figure}[H]
@@ -98,15 +101,12 @@
     \end{figure}
     \begin{itemize}
         \setlength\itemsep{0.8em} % Adjust the spacing between items
-        \item \textbf{Interaction avec chatbot}
-        \item \textbf{Inscription à un cours}
-        \item \textbf{Inscription à un événement}
-        \item \textbf{Demande de certificat}
-
+        \item \textbf{Visualisation des sentiments en temps réel}
+        \item \textbf{Recherche et filtrage par article}
+        \item \textbf{Statistiques et graphiques d'analyse}
+        \item \textbf{Export des données d'analyse}
     \end{itemize}
-
 \end{frame}
-
 
 \begin{frame}{Fonctionnalités Axées sur l'administrateur}
     \begin{figure}[H]
@@ -116,11 +116,9 @@
 
     \begin{itemize}
         \setlength\itemsep{0.8em} % Adjust the spacing between items
-
-        \item \textbf{Gestion des cours}
-        \item \textbf{Gestion des événements}
-        \item \textbf{Gestion des certificats}
-        \item \textbf{Gestion des utilisateurs}
+        \item \textbf{Configuration du scraping Hespress}
+        \item \textbf{Gestion des modèles d'IA}
+        \item \textbf{Monitoring système et performances}
+        \item \textbf{Gestion des utilisateurs et permissions}
     \end{itemize}
-
 \end{frame}
