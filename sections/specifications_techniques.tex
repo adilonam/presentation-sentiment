@@ -2,10 +2,23 @@
 
 
 \subsection{Évaluation comparative des technologies.}
-\begin{frame}{Benchmark Backend}
+\begin{frame}{Choix pour API Gateway}
     \begin{figure}[H]
         \centering
-        \includegraphics[height=5cm]{assets/images/benchmark.png}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=3cm]{assets/images/spring.png}
+        \end{minipage}%
+        \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=3cm]{assets/images/laravel.png}
+        \end{minipage}%
+        \hspace{0.03\textwidth}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[height=3cm]{assets/images/django.png}
+        \end{minipage}
     \end{figure}
 \end{frame}
 
@@ -19,7 +32,7 @@
 \begin{frame}{Benchmark model IA}
     \begin{figure}[H]
         \centering
-        \includegraphics[height=6cm]{assets/images/ia_benchmark.png}
+        \includegraphics[height=6cm]{assets/images/ai-acc-dataset.png}
     \end{figure}
 \end{frame}
 
@@ -81,5 +94,5 @@
 \subsection{Conclusion}
 \begin{frame}{Conclusion}
 
-    Cette étude technique détaille l\'architecture des microservices, les technologies utilisées, et les interactions entre les services, garantissant une application modulaire, sécurisée, et scalable avec Keycloak pour la gestion des identités et des accès. Les choix de conception visent à assurer une expérience utilisateur optimale tout en garantissant performance et sécurité.
+    En bref, notre application de classification de sentiments des commentaires Hespress utilise une architecture microservices avec Next.js (front), FastAPI (back), Spring (API Gateway), Keycloak (auth), PostgreSQL, Redis (cache), Selenium (scraping) et le modèle cardiffnlp/twitter-xlm-roberta-base-sentiment. Ce projet a été réalisé durant mon stage au centre de formation Code 212.
 \end{frame}

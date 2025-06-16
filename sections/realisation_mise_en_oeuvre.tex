@@ -1,5 +1,5 @@
 \section{Realisation et mise en oeuvre}
-\subsection{Sprint 1: D´eveloppement et D´eploiement du Chatbot}
+\subsection{Sprint 1: Configuration de l'environnement de développement et mise en place de l'authentification}
 \begin{frame}{Diagramme de cas d'utilisation}
 
     \begin{figure}[H]
@@ -19,7 +19,7 @@
 \begin{frame}{Diagramme de sequence}
     \begin{figure}[H]
         \centering
-        \includegraphics[height=8cm]{assets/images/chatbot-seq.png}
+        \includegraphics[height=8cm]{assets/images/keycloak-seq.png}
     \end{figure}
 \end{frame}
 
@@ -31,8 +31,7 @@
 \end{frame}
 
 
-\subsection{Sprint 2: Authentification et mise a jour de la
-    base de donnees par l’administrateur}
+\subsection{Sprint 2: Développement du module de web scraping et prétraitement des données}
 \begin{frame}{Diagramme de cas d'utilisation}
 
     \begin{figure}[H]
@@ -49,14 +48,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Diagramme de sequence d'authentification}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[height=8cm]{assets/images/keycloak-seq.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Diagramme de sequence de gestion des resources du chatbot}
+\begin{frame}{Diagramme de sequence de récupération des données}
     \begin{figure}[H]
         \centering
         \includegraphics[height=8cm]{assets/images/chat-res-seq.png}
@@ -72,8 +64,7 @@
 
 
 
-\subsection{Sprint 3: Inscription aux cours, Eevenements et
-    certificats}
+\subsection{Sprint 3: Intégration du modèle d'analyse de sentiment et développement du tableau de bord}
 \begin{frame}{Diagramme de cas d'utilisation}
 
     \begin{figure}[H]
@@ -113,17 +104,16 @@
 \end{frame}
 
 
-\subsection{Sprint 4: Am´elioration de l’Interface Utilisateur et d eploiment et creation des
-    contenaires}
+\subsection{Sprint 4: Génération des rapports d'analyse et tests fonctionnels}
 
-\begin{frame}{Chat room en light mode}
+\begin{frame}{Interface d'analyse en light mode}
     \begin{figure}[H]
         \centering
         \includegraphics[height=6cm]{assets/images/light-chat.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Profile en light mode}
+\begin{frame}{Rapport d'analyse en light mode}
     \begin{figure}[H]
         \centering
         \includegraphics[height=6cm]{assets/images/light-profile.png}
