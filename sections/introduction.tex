@@ -41,6 +41,168 @@
     \end{figure}
 \end{frame}
 
+\subsection{Fondements théoriques du sentiment}
+
+\begin{frame}{Qu'est-ce que le sentiment ?}
+    \begin{block}{\centering \textbf{Définition psychologique}}
+        \begin{itemize}
+            \setlength\itemsep{0.6em}
+            \item \textbf{État affectif durable} d'intensité modérée
+            \item \textbf{Dirigé vers un objet} ou une situation
+            \item \textbf{Composante cognitive} importante
+            \item Se distingue des \textbf{émotions brèves}
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0.3cm}
+    
+    \begin{exampleblock}{\centering \textbf{Exemples}}
+        \centering
+        Amour, haine, confiance, jalousie : états affectifs \textbf{durables} et \textbf{complexes}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Émotions vs Sentiments}
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{\centering \textbf{Émotions}}
+                \begin{itemize}
+                    \setlength\itemsep{0.4em}
+                    \item \textbf{Brèves} (secondes/minutes)
+                    \item \textbf{Intenses}
+                    \item Changements \textbf{physiologiques}
+                    \item Réponse à un \textbf{stimulus}
+                    \item 6 émotions de base (Ekman)
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{\centering \textbf{Sentiments}}
+                \begin{itemize}
+                    \setlength\itemsep{0.4em}
+                    \item \textbf{Durables} (heures/jours)
+                    \item \textbf{Modérés}
+                    \item Composante \textbf{cognitive}
+                    \item État \textbf{dispositionnel}
+                    \item Dirigés vers un \textbf{objet}
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.3cm}
+    
+    \begin{alertblock}{\centering \textbf{Continuité}}
+        \centering
+        Des émotions répétées peuvent alimenter un sentiment durable
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Typologie des sentiments}
+    \begin{block}{\centering \textbf{Valence émotionnelle}}
+        \begin{itemize}
+            \setlength\itemsep{0.6em}
+            \item \textbf{Positif} : satisfaction, enthousiasme, joie
+            \item \textbf{Négatif} : mécontentement, colère, tristesse  
+            \item \textbf{Neutre} : absence de position affective tranchée
+            \item \textbf{Mixte} : sentiments ambivalents (positif + négatif)
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0.3cm}
+    
+    \begin{exampleblock}{\centering \textbf{Modèles psychologiques}}
+        \begin{itemize}
+            \item \textbf{Roue de Plutchik} : familles d'émotions opposées
+            \item \textbf{Modèle de Russell} : valence × activation
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{L'analyse de sentiment en NLP}
+    \begin{block}{\centering \textbf{Définition (Bing Liu)}}
+        \centering
+        "Analyse des opinions, sentiments, évaluations, attitudes et émotions des personnes à l'égard d'entités données et de leurs attributs"
+    \end{block}
+    
+    \vspace{0.3cm}
+    
+    \begin{block}{\centering \textbf{Tâches principales}}
+        \begin{itemize}
+            \setlength\itemsep{0.5em}
+            \item \textbf{Classification de polarité} (positif/négatif/neutre)
+            \item \textbf{Extraction d'opinions ciblées}
+            \item \textbf{Détection de subjectivité}
+            \item \textbf{Analyse d'émotion}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Historique de l'analyse de sentiment}
+    \begin{block}{\centering \textbf{Chronologie}}
+        \begin{itemize}
+            \setlength\itemsep{0.5em}
+            \item \textbf{2001-2002} : Travaux fondateurs (Das \& Chen, Pang et al.)
+            \item \textbf{2003} : Émergence des termes "sentiment analysis" et "opinion mining"
+            \item \textbf{2008} : Première synthèse majeure (Pang \& Lee)
+            \item \textbf{2010s} : Essor de l'apprentissage profond (LSTM, CNN)
+            \item \textbf{2018+} : Révolution des Transformers (BERT, GPT)
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0.3cm}
+    
+    \begin{alertblock}{\centering \textbf{Moteur}}
+        \centering
+        Explosion du Web 2.0 et des contenus générés par les utilisateurs
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Méthodes d'analyse de sentiment}
+    \begin{block}{\centering \textbf{Approches classiques}}
+        \begin{itemize}
+            \setlength\itemsep{0.4em}
+            \item \textbf{Lexiques de sentiments} : listes de mots annotés
+            \item \textbf{Machine Learning} : SVM, Naive Bayes, Régression logistique
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{\centering \textbf{Apprentissage profond}}
+        \begin{itemize}
+            \setlength\itemsep{0.4em}
+            \item \textbf{CNN} : Réseaux de neurones convolutifs
+            \item \textbf{LSTM/BiLSTM} : Mémoire à long/court terme
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{\centering \textbf{Modèles Transformer}}
+        \begin{itemize}
+            \setlength\itemsep{0.4em}
+            \item \textbf{BERT, T5, GPT} : Embeddings contextuels
+            \item \textbf{Mécanismes d'attention} : Performances état de l'art
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Défis actuels}
+    \begin{alertblock}{\centering \textbf{Complexités linguistiques}}
+        \begin{itemize}
+            \setlength\itemsep{0.5em}
+            \item \textbf{Ironie et sarcasme} : Inversion du sentiment apparent
+            \item \textbf{Sentiments mixtes} : Ambivalence positive-négative
+            \item \textbf{Contexte culturel} : Variations selon les langues
+            \item \textbf{Évolution du langage} : Argot, émojis, néologismes
+        \end{itemize}
+    \end{alertblock}
+
+    \vspace{0.3cm}
+    
+    \begin{block}{\centering \textbf{Extensions multimodales}}
+        \centering
+        Intégration du ton vocal, expressions faciales, gestuelle
+    \end{block}
+\end{frame}
+
 
 
 \subsection{Problématique}
